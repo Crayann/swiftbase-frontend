@@ -1,14 +1,16 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'SwiftBridge - Send Money Globally',
-  description: 'Fast, low-cost international money transfers using blockchain',
+  title: 'SwiftBridge - Send Money Instantly',
+  description: 'Fast, secure international money transfers powered by XRPL and Visa',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="antialiased">
+        {children}
+      </body>
     </html>
   )
 }
