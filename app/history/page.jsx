@@ -11,13 +11,12 @@ export default function History() {
             Your transaction history will appear here.
           </p>
           
-          {/* Placeholder for demo */}
           <div className="mt-8 space-y-4">
             <div className="border-l-4 border-green-500 bg-gray-50 p-4 rounded">
               <div className="flex justify-between items-start">
                 <div>
                   <p className="font-semibold text-gray-900">Sent $500 to Maria</p>
-                  <p className="text-sm text-gray-600">Completed • Jan 15, 2025</p>
+                  <p className="text-sm text-gray-600">Completed - Jan 15, 2025</p>
                 </div>
                 <span className="text-green-600 font-bold">-$500</span>
               </div>
@@ -27,7 +26,7 @@ export default function History() {
               <div className="flex justify-between items-start">
                 <div>
                   <p className="font-semibold text-gray-900">Sent $200 to Juan</p>
-                  <p className="text-sm text-gray-600">Completed • Jan 14, 2025</p>
+                  <p className="text-sm text-gray-600">Completed - Jan 14, 2025</p>
                 </div>
                 <span className="text-green-600 font-bold">-$200</span>
               </div>
