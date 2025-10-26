@@ -8,14 +8,23 @@ export default function Home() {
         <h1 className="text-2xl font-bold bg-gradient-to-r from-gray-200 to-gray-400 bg-clip-text text-transparent">
           SwiftBase
         </h1>
-        <Link 
-          href="/send" 
-          className="bg-gradient-to-r from-gray-200 to-gray-400 text-black px-6 py-2 rounded-lg font-semibold hover:from-gray-300 hover:to-gray-500 transition-all"
-        >
-          Send Money
-        </Link>
+        <div className="flex gap-4">
+          <Link 
+            href="/login" 
+            className="text-gray-300 hover:text-white px-4 py-2 rounded-lg font-semibold transition"
+          >
+            Login
+          </Link>
+          <Link 
+            href="/register" 
+            className="bg-gradient-to-r from-gray-200 to-gray-400 text-black px-6 py-2 rounded-lg font-semibold hover:from-gray-300 hover:to-gray-500 transition-all"
+          >
+            Sign Up
+          </Link>
+        </div>
       </nav>
 
+      {/* Rest of your landing page code... */}
       <div className="max-w-6xl mx-auto px-6 py-20 text-white">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-gray-100 via-gray-300 to-gray-500 bg-clip-text text-transparent">
@@ -25,13 +34,14 @@ export default function Home() {
             Save up to 90% on fees using blockchain technology
           </p>
           <Link 
-            href="/send"
+            href="/register"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-gray-200 to-gray-400 text-black px-8 py-4 rounded-xl font-bold text-lg hover:from-gray-300 hover:to-gray-500 transition-all shadow-lg hover:shadow-gray-500/50"
           >
             Start Sending <ArrowRight />
           </Link>
         </div>
 
+        {/* Features grid */}
         <div className="grid md:grid-cols-3 gap-8 mt-20">
           <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-lg p-8 rounded-2xl border border-gray-700 hover:border-gray-500 transition-all">
             <Zap className="w-12 h-12 mb-4 text-gray-300" />
@@ -58,6 +68,7 @@ export default function Home() {
           </div>
         </div>
 
+        {/* How it works */}
         <div className="mt-20 bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-lg p-12 rounded-2xl border border-gray-700">
           <h3 className="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-gray-100 to-gray-400 bg-clip-text text-transparent">
             How It Works
@@ -67,25 +78,25 @@ export default function Home() {
               <div className="bg-gradient-to-r from-gray-200 to-gray-400 text-black w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-lg">
                 1
               </div>
-              <p className="text-gray-300">Enter amount and recipient</p>
+              <p className="text-gray-300">Create account</p>
             </div>
             <div className="text-center">
               <div className="bg-gradient-to-r from-gray-200 to-gray-400 text-black w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-lg">
                 2
               </div>
-              <p className="text-gray-300">Compare best routes</p>
+              <p className="text-gray-300">Add payment method</p>
             </div>
             <div className="text-center">
               <div className="bg-gradient-to-r from-gray-200 to-gray-400 text-black w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-lg">
                 3
               </div>
-              <p className="text-gray-300">Pay with Visa card</p>
+              <p className="text-gray-300">Send money</p>
             </div>
             <div className="text-center">
               <div className="bg-gradient-to-r from-gray-200 to-gray-400 text-black w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-lg">
                 4
               </div>
-              <p className="text-gray-300">Recipient gets money instantly</p>
+              <p className="text-gray-300">Money arrives instantly</p>
             </div>
           </div>
         </div>
