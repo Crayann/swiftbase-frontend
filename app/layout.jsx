@@ -1,9 +1,10 @@
 import './globals.css'
 import { AuthProvider } from '@/context/AuthContext'
+import Header from '@/components/Header'
 
 export const metadata = {
   title: 'SwiftBase - Send Money Globally',
-  description: 'Fast, secure international money transfers powered by XRPL',
+  description: 'Fast, secure international money transfers',
 }
 
 export default function RootLayout({ children }) {
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="antialiased">
         <AuthProvider>
+          <Header />
           {children}
         </AuthProvider>
       </body>
