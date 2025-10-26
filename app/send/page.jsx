@@ -32,7 +32,7 @@ export default function SendMoney() {
       },
       {
         provider: 'Traditional Wire',
-        type: 'traditional',
+        type: 'JPMorgan Chase, Bank of America, Citibank',
         amountSent: amount,
         fee: amount * 0.05 + 5,
         exchangeRate: rate * 0.97,
@@ -42,7 +42,7 @@ export default function SendMoney() {
       },
       {
         provider: 'Competitor Service',
-        type: 'competitor',
+        type: 'SlingPay, TransferWise',
         amountSent: amount,
         fee: amount * 0.015 + 3,
         exchangeRate: rate * 0.99,
